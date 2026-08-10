@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://williamoliveir.github.io/recanto-das-hortencias-site/sitemap.xml
