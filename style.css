@@ -1384,7 +1384,7 @@ body.lightbox-aberto {
 
 .localizacao-rodape span {
     font-size: 15px;
-    color: #77756d;
+    color: var(--texto-suave);
 }
 
 
