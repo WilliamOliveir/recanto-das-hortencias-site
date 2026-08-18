@@ -241,7 +241,7 @@ a {
 .section-tag {
     display: block;
     margin-bottom: 18px;
-    color: var(--dourado-escuro);
+    color: #8a5a00;
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
