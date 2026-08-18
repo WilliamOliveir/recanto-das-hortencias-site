@@ -2,34 +2,30 @@
 <html lang="pt-BR">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-50EWF7G83Y"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- Google Analytics 4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50EWF7G83Y"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-  gtag('config', 'G-50EWF7G83Y');
-</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag("js", new Date());
+        gtag("config", "G-50EWF7G83Y");
+    </script>
 
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Sítio Recanto das Hortências | Hospedagem em Juquitiba - SP</title>
 
     <meta
-    name="description"
-    content="Sítio Recanto das Hortências em Juquitiba, SP. Hospedagem para famílias e grupos de até 20 pessoas, com piscina, churrasqueira, natureza e espaços de convivência."
->
-    <meta
-        name="robots"
-        content="index, follow"
+        name="description"
+        content="Sítio Recanto das Hortências em Juquitiba, SP. Hospedagem para famílias e grupos de até 20 pessoas, com piscina, churrasqueira, natureza e espaços de convivência."
     >
 
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#30452d">
 
     <!-- Open Graph / WhatsApp / Facebook -->
@@ -37,44 +33,39 @@
         property="og:title"
         content="Sítio Recanto das Hortências | Juquitiba - SP"
     >
-
     <meta
         property="og:description"
         content="Sítio Recanto das Hortências em Juquitiba, SP. Hospedagem para famílias e grupos de até 20 pessoas, com piscina, churrasqueira, natureza e espaços de convivência."
     >
-
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Sítio Recanto das Hortências">
-
     <meta
         property="og:url"
         content="https://williamoliveir.github.io/recanto-das-hortencias-site/"
     >
-
     <meta
         property="og:image"
-        content="https://williamoliveir.github.io/recanto-das-hortencias-site/assets/images/casa-piscina.jpg"
+        content="https://williamoliveir.github.io/recanto-das-hortencias-site/assets/images/piscina4.webp"
     >
-
     <meta
         property="og:image:alt"
-        content="Sítio Recanto das Hortências em Juquitiba, São Paulo"
+        content="Piscina e área externa do Sítio Recanto das Hortências em Juquitiba, São Paulo"
     >
 
-    <!-- Compartilhamento em outras plataformas -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
     <meta
         name="twitter:title"
-        content="SítioRecanto das Hortências | Juquitiba - SP"
+        content="Sítio Recanto das Hortências | Juquitiba - SP"
     >
-  <meta
-    name="twitter:description"
-    content="Sítio Recanto das Hortências em Juquitiba, SP. Hospedagem para famílias e grupos de até 20 pessoas, com piscina, churrasqueira e contato com a natureza."
->
+    <meta
+        name="twitter:description"
+        content="Sítio Recanto das Hortências em Juquitiba, SP. Hospedagem para famílias e grupos de até 20 pessoas, com piscina, churrasqueira e contato com a natureza."
+    >
     <meta
         name="twitter:image"
-        content="https://williamoliveir.github.io/recanto-das-hortencias-site/assets/images/casa-piscina.jpg"
+        content="https://williamoliveir.github.io/recanto-das-hortencias-site/assets/images/piscina4.webp"
     >
 
     <!-- URL oficial da página -->
@@ -83,7 +74,7 @@
         href="https://williamoliveir.github.io/recanto-das-hortencias-site/"
     >
 
-    <!-- Arquivos visuais e CSS -->
+    <!-- Arquivos visuais -->
     <link rel="stylesheet" href="style.css">
     <link
         rel="icon"
@@ -91,7 +82,7 @@
         href="assets/icons/favicon.png"
     >
 
-    <!-- Dados estruturados para mecanismos de busca -->
+    <!-- Dados estruturados -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -99,7 +90,7 @@
         "name": "Sítio Recanto das Hortências",
         "description": "Sítio Recanto das Hortências em Juquitiba, SP. Hospedagem para famílias e grupos de até 20 pessoas, com piscina, churrasqueira, natureza e espaços de convivência.",
         "url": "https://williamoliveir.github.io/recanto-das-hortencias-site/",
-        "image": "https://williamoliveir.github.io/recanto-das-hortencias-site/assets/images/casa-piscina.jpg",
+        "image": "https://williamoliveir.github.io/recanto-das-hortencias-site/assets/images/piscina4.webp",
         "telephone": "+55 11 98108-4204",
         "address": {
             "@type": "PostalAddress",
@@ -136,7 +127,6 @@
         ]
     }
     </script>
-
 </head>
 
 <body>
@@ -152,6 +142,8 @@
                 <img
                     src="assets/images/logo-recanto-hortencias.webp"
                     alt="Sítio Recanto das Hortências"
+                    width="400"
+                    height="267"
                 >
             </a>
         </div>
@@ -159,8 +151,7 @@
         <nav aria-label="Menu principal">
             <a href="#inicio">Início</a>
             <a href="#recanto">O Recanto</a>
-            <a href="#estrutura">Estrutura</a>
-            <a href="#galeria">Galeria</a>
+            <a href="#estrutura">Espaços</a>
             <a href="#contato">Reservas</a>
         </nav>
 
@@ -175,7 +166,7 @@
 
         <section class="hero" id="inicio">
 
-            <div class="hero-overlay"></div>
+            <div class="hero-overlay" aria-hidden="true"></div>
 
             <div class="hero-content">
 
@@ -198,7 +189,7 @@
                     </a>
 
                     <a
-                        href="https://wa.me/5511981084204?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20Recanto%20das%20Hort%C3%AAncias."
+                        href="https://wa.me/5511981084204?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20S%C3%ADtio%20Recanto%20das%20Hort%C3%AAncias."
                         target="_blank"
                         rel="noopener noreferrer"
                         class="btn-secondary"
@@ -234,12 +225,12 @@
 
             <div>
                 <strong>Natureza</strong>
-                <span>Mata, jardins e rio na região</span>
+                <span>Mata, jardins e Rio Juquiá</span>
             </div>
 
             <div>
                 <strong>Área de convivência</strong>
-                <span>Churrasqueira, sinuca e espaços para reunir</span>
+                <span>Churrasqueiras, sinuca e espaços para reunir</span>
             </div>
 
         </section>
@@ -251,15 +242,15 @@
 
         <section class="sobre-recanto" id="recanto">
 
-            <div class="sobre-recanto-imagem">
+            <img
+                src="assets/images/fachada.webp"
+                alt="Casa, piscina e natureza do Sítio Recanto das Hortências em Juquitiba"
+                class="sobre-recanto-imagem"
+                loading="lazy"
+                decoding="async"
+            >
 
-                <img
-                    src="assets/images/rio.jpg"
-                    alt="Rio cercado pela natureza em Juquitiba"
-                    loading="lazy"
-                >
-
-            </div>
+            <div class="sobre-recanto-overlay" aria-hidden="true"></div>
 
             <div class="sobre-recanto-conteudo">
 
@@ -275,14 +266,14 @@
 
                 <p>
                     Aqui, a simplicidade da casa de campo se encontra com
-                    espaços de convivência, piscina, churrasqueira, cozinha,
-                    sinuca, jardins e muito verde ao redor.
+                    piscina, churrasqueira, cozinha, sinuca, jardins
+                    e muito verde ao redor.
                 </p>
 
                 <p>
-                    É um lugar para famílias e grupos que procuram
-                    tranquilidade, contato com a natureza e liberdade
-                    para aproveitar o espaço no próprio ritmo.
+                    É um lugar para famílias e grupos que procuram tranquilidade,
+                    contato com a natureza e liberdade para aproveitar o espaço
+                    no próprio ritmo.
                 </p>
 
                 <div class="sobre-recanto-frase">
@@ -295,169 +286,544 @@
 
 
         <!-- =================================================
-             ESTRUTURA
+             ESPAÇOS E ESTRUTURA
              ================================================= -->
 
-        <section class="estrutura" id="estrutura">
+        <section class="espacos" id="estrutura">
 
-            <div class="estrutura-header">
+            <div class="espacos-header">
 
-                <span class="section-tag">Estrutura</span>
+                <span class="section-tag">Conheça o Recanto</span>
 
-                <h2>Tudo para aproveitar o Recanto</h2>
+                <h2>Espaços para aproveitar cada momento</h2>
 
                 <p>
-                    Espaços para descansar, cozinhar, reunir a família
-                    e aproveitar os dias em meio à natureza.
+                    Conheça um pouco da estrutura do Sítio Recanto das Hortências
+                    e dos espaços preparados para receber famílias e grupos.
                 </p>
 
             </div>
 
 
-            <div class="estrutura-grid">
+            <!-- PISCINA -->
 
-                <article class="estrutura-card estrutura-card-grande">
+            <article class="espaco-item">
 
-                    <img
-                        src="assets/images/casa-piscina.jpg"
-                        alt="Piscina e casa do Recanto das Hortências"
-                        loading="lazy"
-                    >
-
-                    <div class="estrutura-card-conteudo">
-                        <span>Lazer</span>
-                        <h3>Viva em meio à natureza</h3>
-                    </div>
-
-                </article>
-
-
-                <article class="estrutura-card">
+                <div class="espaco-imagem espaco-cartas">
 
                     <img
-                        src="assets/images/area-convivencia.jpg"
-                        alt="Área de convivência do Recanto das Hortências"
+                        src="assets/images/pordosol-piscina.webp"
+                        alt="Piscina do Sítio Recanto das Hortências integrada à natureza"
+                        class="carta carta-esquerda"
                         loading="lazy"
+                        decoding="async"
                     >
-
-                    <div class="estrutura-card-conteudo">
-                        <span>Convivência</span>
-                        <h3>Espaços para reunir</h3>
-                    </div>
-
-                </article>
-
-
-                <article class="estrutura-card">
 
                     <img
-                        src="assets/images/recanto-sinuca.jpg"
-                        alt="Mesa de sinuca do Recanto das Hortências"
+                        src="assets/images/piscina noite.webp"
+                        alt="Piscina do Sítio Recanto das Hortências durante a noite"
+                        class="carta carta-esquerda-centro"
                         loading="lazy"
+                        decoding="async"
                     >
-
-                    <div class="estrutura-card-conteudo">
-                        <span>Diversão</span>
-                        <h3>Sinuca e momentos juntos</h3>
-                    </div>
-
-                </article>
-
-
-                <article class="estrutura-card">
 
                     <img
-                        src="assets/images/cozinha.jpg"
-                        alt="Cozinha do Recanto das Hortências"
+                        src="assets/images/piscina3.webp"
+                        alt="Área da piscina cercada pela natureza"
+                        class="carta carta-direita"
                         loading="lazy"
+                        decoding="async"
                     >
-
-                    <div class="estrutura-card-conteudo">
-                        <span>Casa</span>
-                        <h3>Cozinha equipada</h3>
-                    </div>
-
-                </article>
-
-
-                <article class="estrutura-card">
 
                     <img
-                        src="assets/images/churrasqueira.jpg"
-                        alt="Área de churrasqueira do Recanto das Hortências"
+                        src="assets/images/piscina4.webp"
+                        alt="Piscina e área externa do Sítio Recanto das Hortências"
+                        class="carta carta-principal"
                         loading="lazy"
+                        decoding="async"
                     >
 
-                    <div class="estrutura-card-conteudo">
-                        <span>Sabores</span>
-                        <h3>Churrasqueira e fogão a lenha</h3>
+                </div>
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">Piscina</span>
+
+                    <h3>Dias de descanso e diversão</h3>
+
+                    <p>
+                        A piscina é um dos principais espaços de lazer do Recanto,
+                        cercada pelo verde e integrada à casa e às áreas de convivência.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- COZINHA CAIPIRA -->
+
+            <article class="espaco-item espaco-invertido">
+
+                <div class="espaco-imagem espaco-cartas">
+
+                    <img
+                        src="assets/images/cozinhacaipira1.webp"
+                        alt="Fogão a lenha da cozinha caipira do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/cafecaipira3.webp"
+                        alt="Mesa preparada na cozinha caipira do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda-centro"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/cafecaipira5.webp"
+                        alt="Café e mesa na cozinha caipira integrada à natureza"
+                        class="carta carta-direita"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/cozinhacaipira3.webp"
+                        alt="Cozinha caipira do Sítio Recanto das Hortências"
+                        class="carta carta-principal"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">Cozinha caipira</span>
+
+                    <h3>O sabor de estar no interior</h3>
+
+                    <p>
+                        Fogão a lenha, mesa grande e aquele clima de cozinha de sítio.
+                        Um espaço para preparar as refeições sem pressa, reunir todo mundo
+                        à mesa e aproveitar os sabores do interior.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- CHURRASQUEIRAS -->
+
+            <article class="espaco-item">
+
+                <div class="espaco-imagem espaco-cartas">
+
+                    <img
+                        src="assets/images/areadeconvivencia4.webp"
+                        alt="Área coberta com churrasqueira do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/areadeconvivencia2.webp"
+                        alt="Área de convivência integrada à churrasqueira"
+                        class="carta carta-esquerda-centro"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/churrasqueira.webp"
+                        alt="Bancada e churrasqueira do Sítio Recanto das Hortências"
+                        class="carta carta-direita"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/churrasqueira1.webp"
+                        alt="Área da churrasqueira do Sítio Recanto das Hortências"
+                        class="carta carta-principal"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">Churrasqueiras</span>
+
+                    <h3>Um espaço feito para reunir</h3>
+
+                    <p>
+                        Área coberta e integrada ao verde, preparada para reunir
+                        família e amigos em torno da churrasqueira, aproveitar
+                        boas conversas e compartilhar momentos especiais.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- COZINHA INTERNA -->
+
+            <article class="espaco-item espaco-invertido">
+
+                <div class="espaco-imagem espaco-cartas">
+
+                    <img
+                        src="assets/images/cozinha2.webp"
+                        alt="Cozinha interna do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/cozinha1.webp"
+                        alt="Vista da cozinha interna do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda-centro"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/cozinha3.webp"
+                        alt="Área de apoio da cozinha interna do Sítio Recanto das Hortências"
+                        class="carta carta-direita"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/cozinha4.webp"
+                        alt="Cozinha interna equipada do Sítio Recanto das Hortências"
+                        class="carta carta-principal"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">Cozinha interna</span>
+
+                    <h3>Praticidade para o dia a dia</h3>
+
+                    <p>
+                        Uma cozinha completa e integrada à casa, preparada para
+                        facilitar as refeições durante a estadia e deixar tudo à mão
+                        para aproveitar os dias no Recanto.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- SINUCA -->
+
+            <article class="espaco-item">
+
+                <div class="espaco-imagem espaco-cartas">
+
+                    <img
+                        src="assets/images/sinuca.webp"
+                        alt="Área de sinuca do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/sinuca1.webp"
+                        alt="Mesa de sinuca na área de lazer do Recanto"
+                        class="carta carta-esquerda-centro"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/sinuca3.webp"
+                        alt="Espaço de lazer com mesa de sinuca"
+                        class="carta carta-direita"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/sinuca2.webp"
+                        alt="Mesa de sinuca do Sítio Recanto das Hortências"
+                        class="carta carta-principal"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">Diversão</span>
+
+                    <h3>Uma partida sempre cai bem</h3>
+
+                    <p>
+                        A mesa de sinuca completa os momentos de lazer no Recanto.
+                        Um espaço para reunir a turma, brincar, conversar e aproveitar
+                        o tempo juntos sem pressa.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- A CASA -->
+
+            <article class="espaco-item espaco-invertido">
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">A casa</span>
+
+                    <h3>Conforto para receber<br>seu grupo</h3>
+
+                    <div class="acomodacao-destaques">
+
+                        <span>
+                            <strong>4</strong>
+                            quartos
+                        </span>
+
+                        <span>
+                            <strong>12</strong>
+                            pessoas em camas
+                        </span>
+
+                        <span>
+                            <strong>20</strong>
+                            hóspedes com extras
+                        </span>
+
                     </div>
 
-                </article>
+                    <p>
+                        A casa conta com 4 quartos, todos equipados com uma cama
+                        de casal e uma cama de solteiro, oferecendo acomodação
+                        em camas para até 12 pessoas.
+                    </p>
 
-            </div>
+                    <p>
+                        Para grupos maiores, disponibilizamos colchões extras,
+                        permitindo receber até 20 hóspedes.
+                    </p>
+
+                    <p>
+                        Sala, cozinha e demais ambientes completam a estrutura
+                        para uma estadia prática e confortável em família ou
+                        entre amigos.
+                    </p>
+
+                </div>
+
+                <div class="espaco-cartas">
+
+                    <img
+                        src="assets/images/quarto2.webp"
+                        alt="Quarto do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/quarto1.webp"
+                        alt="Acomodação do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda-centro"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/sala1.webp"
+                        alt="Sala e área interna do Sítio Recanto das Hortências"
+                        class="carta carta-direita"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/sala2.webp"
+                        alt="Sala principal do Sítio Recanto das Hortências"
+                        class="carta carta-principal"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+            </article>
+
+
+            <!-- NATUREZA E RIO JUQUIÁ -->
+
+            <article class="espaco-item">
+
+                <div class="espaco-cartas">
+
+                    <img
+                        src="assets/images/portaoentrada.webp"
+                        alt="Entrada do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/jardim2.webp"
+                        alt="Jardins do Sítio Recanto das Hortências"
+                        class="carta carta-esquerda-centro"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/rio4.webp"
+                        alt="Natureza às margens do Rio Juquiá"
+                        class="carta carta-direita"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <img
+                        src="assets/images/rio2.webp"
+                        alt="Rio Juquiá no Sítio Recanto das Hortências"
+                        class="carta carta-principal"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                </div>
+
+                <div class="espaco-texto">
+
+                    <span class="section-tag">Natureza</span>
+
+                    <h3>Um encontro com<br>o Rio Juquiá</h3>
+
+                    <p>
+                        Cercado pelo verde e pela tranquilidade do interior,
+                        o Sítio Recanto das Hortências proporciona um contato especial
+                        com a natureza. Jardins, árvores e caminhos levam até as margens
+                        do Rio Juquiá, que faz parte da paisagem da propriedade.
+                    </p>
+
+                    <p>
+                        No trecho em frente ao sítio, os hóspedes podem tomar banho
+                        de rio, pescar ou simplesmente ficar às margens da água,
+                        aproveitando a paisagem e a tranquilidade do lugar.
+                    </p>
+
+                    <p>
+                        Afluente do Ribeira de Iguape e cercado pela natureza da
+                        Mata Atlântica, o Rio Juquiá faz parte da identidade da região
+                        e torna a experiência no Recanto ainda mais especial.
+                    </p>
+
+                    <p>
+                        Um cenário para desacelerar, contemplar a natureza
+                        e aproveitar o interior com mais calma.
+                    </p>
+
+                </div>
+
+            </article>
 
         </section>
 
 
         <!-- =================================================
-             GALERIA
+             COMODIDADES
              ================================================= -->
 
-        <section class="galeria" id="galeria">
+        <section class="comodidades" id="comodidades">
 
-            <div class="galeria-header">
+            <div class="comodidades-header">
 
-                <span class="section-tag">Galeria</span>
+                <span class="section-tag">Informações do Recanto</span>
 
-                <h2>Um pouco mais do Recanto</h2>
+                <h2>Tudo para aproveitar a estadia</h2>
 
                 <p>
-                    Conheça alguns dos espaços e paisagens que fazem parte
-                    da experiência no Sítio Recanto das Hortências.
+                    Estrutura pensada para receber famílias e grupos com conforto,
+                    lazer e praticidade durante os dias no Recanto.
                 </p>
 
             </div>
 
 
-            <div class="galeria-grid">
+            <div class="comodidades-grid">
 
-                <img
-                    src="assets/images/casa-piscina.jpg"
-                    alt="Casa e piscina do Sítio Recanto das Hortências"
-                    class="galeria-grande"
-                    loading="lazy"
-                >
+                <article class="comodidade-card">
+                    <strong>Até 20 hóspedes</strong>
+                    <span>Espaço para famílias e grupos</span>
+                </article>
 
-                <img
-                    src="assets/images/rio.jpg"
-                    alt="Rio cercado pela natureza"
-                    loading="lazy"
-                >
+                <article class="comodidade-card">
+                    <strong>4 quartos</strong>
+                    <span>12 pessoas em camas + colchões extras</span>
+                </article>
 
-                <img
-                    src="assets/images/recanto-sinuca.jpg"
-                    alt="Área de sinuca do Recanto"
-                    loading="lazy"
-                >
+                <article class="comodidade-card">
+                    <strong>Piscina</strong>
+                    <span>Área de lazer integrada à natureza</span>
+                </article>
 
-                <img
-                    src="assets/images/area-convivencia.jpg"
-                    alt="Área de convivência do Recanto"
-                    loading="lazy"
-                >
+                <article class="comodidade-card">
+                    <strong>2 churrasqueiras</strong>
+                    <span>Espaços para reunir família e amigos</span>
+                </article>
 
-                <img
-                    src="assets/images/cozinha.jpg"
-                    alt="Cozinha do Recanto das Hortências"
-                    loading="lazy"
-                >
+                <article class="comodidade-card">
+                    <strong>2 cozinhas</strong>
+                    <span>Interna e caipira com fogão a lenha</span>
+                </article>
 
-                <img
-                    src="assets/images/churrasqueira.jpg"
-                    alt="Área de churrasqueira do Recanto"
-                    loading="lazy"
-                >
+                <article class="comodidade-card">
+                    <strong>Sinuca</strong>
+                    <span>Diversão para aproveitar em grupo</span>
+                </article>
+
+                <article class="comodidade-card">
+                    <strong>Rio Juquiá</strong>
+                    <span>Acesso ao trecho em frente ao sítio para banho e pesca</span>
+                </article>
+
+                <article class="comodidade-card">
+                    <strong>Wi-Fi</strong>
+                    <span>Internet disponível durante a estadia</span>
+                </article>
+
+                <article class="comodidade-card">
+                    <strong>TV e streaming</strong>
+                    <span>Netflix e Amazon Prime disponíveis para os hóspedes</span>
+                </article>
+
+                <article class="comodidade-card">
+                    <strong>Estacionamento</strong>
+                    <span>Espaço para vários veículos</span>
+                </article>
 
             </div>
 
@@ -474,16 +840,16 @@
 
                 <span class="section-tag">Reservas</span>
 
-                <h2>Quer passar alguns dias no Recanto?</h2>
+                <h2>Seu próximo descanso pode ser aqui</h2>
 
                 <p>
-                    Consulte as datas disponíveis e fale diretamente conosco
-                    pelo WhatsApp para receber informações sobre valores,
-                    períodos e condições da hospedagem.
+                    Informe a data, a quantidade de hóspedes e tire suas dúvidas
+                    diretamente pelo WhatsApp. Respondemos com disponibilidade,
+                    valores e orientações para a reserva.
                 </p>
 
                 <a
-                    href="https://wa.me/5511981084204?text=Olá!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20Recanto%20das%20hortências."
+                    href="https://wa.me/5511981084204?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20S%C3%ADtio%20Recanto%20das%20Hort%C3%AAncias."
                     target="_blank"
                     rel="noopener noreferrer"
                     class="btn-whatsapp"
@@ -520,6 +886,64 @@
 
         </section>
 
+
+        <!-- =====================================================
+             LOCALIZAÇÃO
+             ===================================================== -->
+
+        <section class="localizacao" id="localizacao">
+
+            <div class="localizacao-cabecalho">
+
+                <span class="section-tag">Onde estamos</span>
+
+                <h2>Um refúgio em meio à natureza</h2>
+
+                <p>
+                    O Sítio Recanto das Hortências está em Juquitiba,
+                    cercado pela Mata Atlântica e às margens do Rio Juquiá.
+                    Consulte o mapa e trace sua rota até o Recanto.
+                </p>
+
+            </div>
+
+
+            <div class="localizacao-mapa">
+
+                <iframe
+                    src="https://www.google.com/maps?q=-23.9330812,-47.1073672&z=16&output=embed"
+                    width="100%"
+                    height="100%"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Localização do Sítio Recanto das Hortências">
+                </iframe>
+
+            </div>
+
+
+            <div class="localizacao-rodape">
+
+                <div>
+                    <strong>Sítio Recanto das Hortências</strong>
+                    <span>Juquitiba • São Paulo</span>
+                </div>
+
+                <a
+                    href="https://www.google.com/maps/dir/?api=1&destination=-23.9330812,-47.1073672"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-mapa"
+                >
+                    Abrir rota no Google Maps
+                </a>
+
+            </div>
+
+        </section>
+
     </main>
 
 
@@ -532,9 +956,22 @@
         <div class="footer-conteudo">
 
             <div class="footer-marca">
-                <strong>Sítio Recanto das Hortências</strong>
-                <span>Juquitiba • São Paulo</span>
+
+                <img
+                    src="assets/images/logo-recanto-hortencias.webp"
+                    alt="Sítio Recanto das Hortências"
+                    class="footer-logo"
+                    loading="lazy"
+                    decoding="async"
+                >
+
+                <p>
+                    Um lugar para descansar, reunir quem você gosta
+                    e aproveitar a natureza em Juquitiba.
+                </p>
+
             </div>
+
 
             <nav
                 class="footer-links"
@@ -542,10 +979,44 @@
             >
                 <a href="#inicio">Início</a>
                 <a href="#recanto">O Recanto</a>
-                <a href="#estrutura">Estrutura</a>
-                <a href="#galeria">Galeria</a>
+                <a href="#estrutura">Espaços</a>
+                <a href="#comodidades">Comodidades</a>
+                <a href="#localizacao">Localização</a>
                 <a href="#contato">Reservas</a>
             </nav>
+
+
+            <div class="footer-contato">
+
+                <strong>Fale conosco</strong>
+
+                <a
+                    href="https://wa.me/5511981084204?text=Ol%C3%A1!%20Gostaria%20de%20consultar%20a%20disponibilidade%20do%20S%C3%ADtio%20Recanto%20das%20Hort%C3%AAncias."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    WhatsApp
+                </a>
+
+                <a
+                    href="https://www.instagram.com/sitio.recanto.das.hortencias/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Instagram
+                </a>
+
+                <a
+                    href="https://www.tiktok.com/@recanto.das.hortencias"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    TikTok
+                </a>
+
+                <span>Juquitiba • São Paulo</span>
+
+            </div>
 
         </div>
 
@@ -556,9 +1027,9 @@
                 © 2026 Sítio Recanto das Hortências
             </span>
 
-            <span>
-                Um lugar para descansar e aproveitar a natureza.
-            </span>
+            <a href="#inicio">
+                Voltar ao topo ↑
+            </a>
 
         </div>
 
