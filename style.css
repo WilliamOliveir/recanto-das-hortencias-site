@@ -1519,10 +1519,9 @@ body.lightbox-aberto {
 
 /* Contato */
 
-.footer-contato {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.footer-contato span {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .footer-contato strong {
@@ -1569,11 +1568,11 @@ body.lightbox-aberto {
 
     font-size: 12px;
 
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.70);
 }
 
 .footer-final a {
-    color: rgba(255, 255, 255, 0.60);
+    color: rgba(255, 255, 255, 0.70);
 
     text-decoration: none;
 
