@@ -241,7 +241,7 @@ a {
 .section-tag {
     display: block;
     margin-bottom: 18px;
-    color: #8a5a00;
+    color: var(--dourado-escuro);
     font-size: 13px;
     font-weight: 700;
     text-transform: uppercase;
@@ -1384,7 +1384,7 @@ body.lightbox-aberto {
 
 .localizacao-rodape span {
     font-size: 15px;
-    color: var(--texto-suave);
+    color: #77756d;
 }
 
 
@@ -1519,9 +1519,10 @@ body.lightbox-aberto {
 
 /* Contato */
 
-.footer-contato span {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.70);
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .footer-contato strong {
@@ -1568,11 +1569,11 @@ body.lightbox-aberto {
 
     font-size: 12px;
 
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 0.45);
 }
 
 .footer-final a {
-    color: rgba(255, 255, 255, 0.70);
+    color: rgba(255, 255, 255, 0.60);
 
     text-decoration: none;
 
@@ -1616,4 +1617,405 @@ body.lightbox-aberto {
         gap: 10px;
     }
 
+}
+/* =========================================================
+   PÁGINA DE PERGUNTAS FREQUENTES
+   ========================================================= */
+
+.topo-interno {
+    position: absolute;
+}
+
+.faq-hero {
+    position: relative;
+    min-height: 520px;
+    display: flex;
+    align-items: flex-end;
+    padding: 150px 7% 80px;
+    background-image: url("assets/images/jardim2.webp");
+    background-size: cover;
+    background-position: center;
+}
+
+.faq-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(18, 36, 22, 0.86) 0%,
+        rgba(18, 36, 22, 0.63) 48%,
+        rgba(18, 36, 22, 0.28) 100%
+    );
+}
+
+.faq-hero-conteudo {
+    position: relative;
+    z-index: 2;
+    width: min(760px, 100%);
+    color: var(--branco);
+}
+
+.faq-hero-conteudo h1 {
+    margin-bottom: 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(48px, 6vw, 76px);
+    line-height: 1;
+}
+
+.faq-hero-conteudo p {
+    max-width: 620px;
+    font-size: 19px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.90);
+}
+
+.faq {
+    width: min(1000px, calc(100% - 48px));
+    margin: 0 auto;
+    padding: 100px 0 110px;
+}
+
+.faq-intro {
+    max-width: 720px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.faq-intro h2 {
+    margin: 12px 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 50px);
+    line-height: 1.1;
+    color: var(--verde-700);
+}
+
+.faq-intro p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--texto-suave);
+}
+
+.faq-lista {
+    display: grid;
+    gap: 14px;
+}
+
+.faq-item {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.76);
+    border: 1px solid rgba(48, 69, 45, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.035);
+}
+
+.faq-item summary {
+    position: relative;
+    padding: 23px 64px 23px 25px;
+    list-style: none;
+    cursor: pointer;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: var(--verde-700);
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    transform: translateY(-50%);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 1;
+    color: #8a5a00;
+    transition: transform 0.2s ease;
+}
+
+.faq-item[open] summary::after {
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.faq-item[open] summary {
+    padding-bottom: 18px;
+}
+
+.faq-resposta {
+    padding: 0 25px 25px;
+    border-top: 1px solid rgba(48, 69, 45, 0.08);
+}
+
+.faq-resposta p {
+    margin-top: 18px;
+    font-size: 16px;
+    line-height: 1.75;
+    color: #5d5d55;
+}
+
+.faq-resposta strong {
+    color: var(--verde-700);
+}
+
+.faq-cta {
+    padding: 90px 24px;
+    background: var(--verde-700);
+    color: var(--branco);
+}
+
+.faq-cta-conteudo {
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-cta .section-tag {
+    color: var(--dourado);
+}
+
+.faq-cta h2 {
+    margin: 10px 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 52px);
+    line-height: 1.1;
+}
+
+.faq-cta p {
+    max-width: 620px;
+    margin: 0 auto 30px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.84);
+}
+
+
+/* =========================================================
+   PERGUNTAS FREQUENTES - TABLET / MOBILE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .faq-hero {
+        min-height: 470px;
+        padding: 125px 22px 60px;
+    }
+
+    .faq-hero-conteudo h1 {
+        font-size: clamp(44px, 11vw, 60px);
+    }
+
+    .faq-hero-conteudo p {
+        font-size: 17px;
+    }
+
+    .faq {
+        width: calc(100% - 36px);
+        padding: 75px 0 85px;
+    }
+
+    .faq-intro {
+        margin-bottom: 40px;
+    }
+
+    .faq-item summary {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .faq-hero {
+        min-height: 430px;
+        padding: 115px 20px 48px;
+    }
+
+    .faq-hero-conteudo h1 {
+        font-size: 42px;
+    }
+
+    .faq-hero-conteudo p {
+        font-size: 16px;
+    }
+
+    .faq {
+        width: calc(100% - 24px);
+        padding: 60px 0 70px;
+    }
+
+    .faq-intro h2 {
+        font-size: 34px;
+    }
+
+    .faq-item summary {
+        padding: 20px 56px 20px 20px;
+        font-size: 17px;
+    }
+
+    .faq-item summary::after {
+        right: 20px;
+        font-size: 27px;
+    }
+
+    .faq-resposta {
+        padding: 0 20px 22px;
+    }
+
+    .faq-resposta p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .faq-cta {
+        padding: 70px 20px;
+    }
+}
+/* =========================================================
+   CHAMADA PARA PERGUNTAS FREQUENTES - HOME
+   ========================================================= */
+
+.faq-chamada {
+    padding: 80px 7%;
+    background: var(--bege);
+}
+
+.faq-chamada-conteudo {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 58px 70px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(48, 69, 45, 0.07),
+            rgba(231, 201, 133, 0.10)
+        );
+
+    border: 1px solid rgba(48, 69, 45, 0.14);
+    border-radius: 14px;
+}
+
+.faq-chamada h2 {
+    margin: 10px 0 18px;
+
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(38px, 4vw, 50px);
+    line-height: 1.1;
+
+    color: var(--verde-700);
+}
+
+.faq-chamada p {
+    max-width: 720px;
+    margin: 0 auto 30px;
+
+    font-size: 17px;
+    line-height: 1.7;
+
+    color: var(--texto-suave);
+}
+
+.faq-chamada .btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+    padding: 13px 24px;
+
+    border: 1px solid var(--verde-700);
+    border-radius: 8px;
+
+    color: var(--verde-700);
+    background: transparent;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        background 0.2s ease,
+        color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.faq-chamada .btn-secundario:hover {
+    background: var(--verde-700);
+    color: var(--branco);
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   CHAMADA FAQ - MOBILE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .faq-chamada {
+        padding: 55px 20px;
+    }
+
+    .faq-chamada-conteudo {
+        padding: 42px 24px;
+    }
+
+    .faq-chamada h2 {
+        font-size: 36px;
+    }
+
+    .faq-chamada p {
+        font-size: 16px;
+    }
+
+}
+
+
+@media (max-width: 480px) {
+
+    .faq-chamada {
+        padding: 45px 14px;
+    }
+
+    .faq-chamada-conteudo {
+        padding: 38px 20px;
+    }
+
+    .faq-chamada h2 {
+        font-size: 32px;
+    }
+
+    .faq-chamada .btn-secundario {
+        width: 100%;
+    }
+
+}
+/* =========================================================
+   LINK PARA FAQ NA ÁREA DE RESERVAS
+   ========================================================= */
+
+.contato-faq {
+    margin-top: 14px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.contato-faq a {
+    color: var(--dourado);
+    font-weight: 600;
+    text-decoration: none;
+    margin-left: 4px;
+
+    transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+.contato-faq a:hover {
+    color: var(--branco);
+    text-decoration: underline;
 }
