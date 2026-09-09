@@ -2487,7 +2487,43 @@ body.lightbox-aberto {
     word-break: break-word;
     text-align: right;
 }
+/* QR CODE DO WI-FI */
 
+.wifi-qrcode {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28px;
+    background: rgba(48, 69, 45, 0.06);
+}
+
+.wifi-qrcode img {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 10px;
+}
+
+.wifi-qrcode-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    text-align: left;
+}
+
+.wifi-qrcode-texto strong {
+    color: var(--verde-700);
+    font-size: 17px;
+}
+
+.wifi-qrcode-texto span {
+    color: var(--texto-suave);
+    font-size: 14px;
+    line-height: 1.5;
+}
 .manual-wifi .wifi-observacao {
     margin-bottom: 0;
     font-size: 13px;
@@ -2508,7 +2544,23 @@ body.lightbox-aberto {
     .wifi-dado strong {
         text-align: left;
     }
+.wifi-qrcode {
+    flex-direction: column;
+    gap: 16px;
+    padding: 22px 18px;
+    text-align: center;
+}
 
+.wifi-qrcode img {
+    width: 170px;
+    height: 170px;
+}
+
+.wifi-qrcode-texto {
+    align-items: center;
+    text-align: center;
+    max-width: 280px;
+}
 }
 /* =========================================================
    MANUAL - TV E STREAMING
