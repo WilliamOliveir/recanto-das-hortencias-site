@@ -116,7 +116,7 @@ a {
     padding: 135px 7% 85px;
 
     /* A imagem antiga casa-piscina.jpg não existe mais no conjunto atual. */
-    background-image: url("assets/images/entrada sitio.webp");
+    background-image: url("assets/images/casa-piscina.webp");
     background-size: cover;
     background-position: center;
 }
@@ -2234,6 +2234,989 @@ body.lightbox-aberto {
 
     .valor-linha strong {
         font-size: 21px;
+    }
+
+}
+/* =========================================================
+   MANUAL DE BOAS-VINDAS
+   ========================================================= */
+
+.manual-hospede {
+    min-height: 100vh;
+    background: var(--bege);
+}
+
+
+/* CAPA */
+
+.manual-capa {
+    position: relative;
+
+    min-height: 640px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 70px 7%;
+
+    background-color: var(--verde-900);
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(20, 38, 24, 1) 0%,
+            rgba(20, 38, 24, 0.96) 22%,
+            rgba(20, 38, 24, 0.72) 38%,
+            rgba(20, 38, 24, 0.18) 58%,
+            rgba(20, 38, 24, 0) 72%
+        ),
+        url("assets/images/casa-piscina.webp");
+
+    background-size:
+        100% 100%,
+        auto 100%;
+
+    background-position:
+        center,
+        right center;
+
+    background-repeat: no-repeat;
+
+    color: var(--branco);
+}
+
+.manual-capa-conteudo {
+    width: min(520px, 42%);
+    position: relative;
+    z-index: 1;
+}
+
+.manual-capa .section-tag {
+    color: var(--dourado);
+}
+
+.manual-capa h1 {
+    margin: 12px 0 18px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(46px, 6vw, 72px);
+    line-height: 1;
+    color: var(--branco);
+}
+
+.manual-capa p {
+    max-width: 620px;
+    margin: 8px 0;
+    font-size: 18px;
+    line-height: 1.65;
+    color: rgba(255, 255, 255, 0.88);
+}
+
+
+/* BLOCOS DO MANUAL */
+
+.manual-bloco {
+    padding: 80px 7%;
+}
+
+.manual-bloco-conteudo {
+    width: min(760px, 100%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.manual-icone {
+    display: block;
+    margin-bottom: 14px;
+    font-size: 34px;
+}
+
+.manual-bloco h2 {
+    margin: 0 0 16px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(34px, 4vw, 46px);
+    color: var(--verde-700);
+}
+
+.manual-bloco p {
+    max-width: 620px;
+    margin: 0 auto 28px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: var(--texto-suave);
+}
+
+
+/* LOCALIZAÇÃO */
+
+.manual-localizacao {
+    background: var(--bege);
+}
+
+.manual-localizacao .btn-primary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 52px;
+    padding: 14px 26px;
+    border-radius: 8px;
+    background: var(--verde-700);
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.manual-localizacao .btn-primary:hover {
+    transform: translateY(-2px);
+    background: var(--verde-800);
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+
+    .manual-capa {
+    min-height: auto;
+
+    display: flex;
+    align-items: flex-start;
+
+    padding: 330px 22px 46px;
+
+    background-color: var(--verde-900);
+
+    background-image:
+        linear-gradient(
+            180deg,
+            rgba(20, 38, 24, 0) 0%,
+            rgba(20, 38, 24, 0.04) 28%,
+            rgba(20, 38, 24, 0.75) 45%,
+            rgba(20, 38, 24, 0.98) 58%,
+            rgba(20, 38, 24, 1) 100%
+        ),
+        url("assets/images/casa-piscina.webp");
+
+    background-size:
+        100% 100%,
+        100% auto;
+
+    background-position:
+        center,
+        center top;
+
+    background-repeat: no-repeat;
+}
+.manual-capa-conteudo {
+    width: 100%;
+}
+
+    .manual-capa h1 {
+        font-size: 44px;
+    }
+
+    .manual-capa p {
+        font-size: 16px;    
+    }
+
+    .manual-bloco {
+        padding: 60px 22px;
+    }
+
+    .manual-localizacao .btn-primary {
+        width: 100%;
+    }
+
+}
+/* =========================================================
+   MANUAL - WI-FI
+   ========================================================= */
+
+.manual-wifi {
+    background: var(--verde-700);
+    color: var(--branco);
+}
+
+.manual-wifi .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado);
+}
+
+.manual-wifi h2 {
+    color: var(--branco);
+}
+
+.manual-wifi > .manual-bloco-conteudo > p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.wifi-dados {
+    width: min(520px, 100%);
+    margin: 32px auto 22px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: var(--sombra);
+}
+
+.wifi-dado {
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(48, 69, 45, 0.12);
+}
+
+.wifi-dado:last-child {
+    border-bottom: none;
+}
+
+.wifi-dado span {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+.wifi-dado strong {
+    color: var(--verde-700);
+    font-size: 17px;
+    word-break: break-word;
+    text-align: right;
+}
+
+.manual-wifi .wifi-observacao {
+    margin-bottom: 0;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.62);
+}
+
+
+/* WI-FI - CELULAR */
+
+@media (max-width: 560px) {
+
+    .wifi-dado {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .wifi-dado strong {
+        text-align: left;
+    }
+
+}
+/* =========================================================
+   MANUAL - TV E STREAMING
+   ========================================================= */
+
+.manual-streaming {
+    background: var(--bege);
+}
+
+.manual-streaming .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado-escuro);
+}
+
+.streaming-aviso {
+    width: min(560px, 100%);
+    margin: 30px auto 0;
+    padding: 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-radius: 12px;
+    background: var(--branco);
+    box-shadow: var(--sombra);
+
+    text-align: left;
+}
+
+.streaming-aviso strong {
+    color: var(--verde-700);
+    font-size: 17px;
+}
+
+.streaming-aviso span {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.65;
+}
+/* =========================================================
+   MANUAL - FOGÃO A LENHA E FOGUEIRAS
+   ========================================================= */
+
+.manual-lenha {
+    background: var(--verde-700);
+    color: var(--branco);
+}
+
+.manual-lenha .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado);
+}
+
+.manual-lenha h2 {
+    color: var(--branco);
+}
+
+.manual-lenha > .manual-bloco-conteudo > p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.lenha-aviso {
+    width: min(560px, 100%);
+    margin: 30px auto 22px;
+    padding: 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: var(--sombra);
+
+    text-align: left;
+}
+
+.lenha-aviso strong {
+    color: var(--verde-700);
+    font-size: 17px;
+}
+
+.lenha-aviso span {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.manual-lenha .lenha-seguranca {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+}
+/* =========================================================
+   MANUAL - PISCINA, LAGO E RIO
+   ========================================================= */
+
+.manual-agua {
+    background: var(--bege);
+}
+
+.manual-agua .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado-escuro);
+}
+
+.agua-aviso {
+    width: min(560px, 100%);
+    margin: 30px auto 22px;
+    padding: 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-radius: 12px;
+    background: var(--branco);
+    box-shadow: var(--sombra);
+
+    text-align: left;
+}
+
+.agua-aviso strong {
+    color: var(--verde-700);
+    font-size: 17px;
+}
+
+.agua-aviso span {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.manual-agua .agua-seguranca {
+    margin-bottom: 14px;
+    font-size: 14px;
+}
+
+.manual-agua .agua-destaque {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--verde-700);
+}
+/* =========================================================
+   MANUAL - NATUREZA E ANIMAIS
+   ========================================================= */
+
+.manual-natureza {
+    background: var(--verde-700);
+    color: var(--branco);
+}
+
+.manual-natureza .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado);
+}
+
+.manual-natureza h2 {
+    color: var(--branco);
+}
+
+.manual-natureza > .manual-bloco-conteudo > p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.natureza-aviso {
+    width: min(560px, 100%);
+    margin: 30px auto 22px;
+    padding: 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: var(--sombra);
+
+    text-align: left;
+}
+
+.natureza-aviso strong {
+    color: var(--verde-700);
+    font-size: 17px;
+}
+
+.natureza-aviso span {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.manual-natureza .natureza-cuidado {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.72);
+}
+/* =========================================================
+   MANUAL - REFEIÇÕES
+   ========================================================= */
+
+.manual-refeicoes {
+    background: var(--bege);
+}
+
+.manual-refeicoes .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado-escuro);
+}
+
+.refeicoes-aviso {
+    width: min(560px, 100%);
+    margin: 30px auto 22px;
+    padding: 24px 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    border-radius: 12px;
+    background: var(--branco);
+    box-shadow: var(--sombra);
+
+    text-align: left;
+}
+
+.refeicoes-aviso strong {
+    color: var(--verde-700);
+    font-size: 17px;
+}
+
+.refeicoes-aviso span {
+    color: var(--texto-suave);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.manual-refeicoes .refeicoes-observacao {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: var(--texto-suave);
+}
+/* =========================================================
+   MANUAL - ANTES DE IR EMBORA
+   ========================================================= */
+
+.manual-saida {
+    background: var(--verde-700);
+    color: var(--branco);
+}
+
+.manual-saida .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado);
+}
+
+.manual-saida h2 {
+    color: var(--branco);
+}
+
+.manual-saida > .manual-bloco-conteudo > p {
+    color: rgba(255, 255, 255, 0.82);
+}
+
+.saida-lista {
+    width: min(620px, 100%);
+    margin: 32px auto 24px;
+    overflow: hidden;
+
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.97);
+    box-shadow: var(--sombra);
+
+    text-align: left;
+}
+
+.saida-item {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 18px 24px;
+    border-bottom: 1px solid rgba(48, 69, 45, 0.12);
+}
+
+.saida-item:last-child {
+    border-bottom: none;
+}
+
+.saida-item strong {
+    color: var(--verde-700);
+    font-size: 16px;
+}
+
+.saida-item span {
+    color: var(--texto-suave);
+    font-size: 14px;
+    line-height: 1.55;
+}
+
+.manual-saida .saida-despedida {
+    margin-bottom: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--dourado);
+}
+/* =========================================================
+   MANUAL - CONTATO E ENCERRAMENTO
+   ========================================================= */
+
+.manual-contato {
+    padding: 90px 7%;
+    background: var(--bege);
+    text-align: center;
+}
+
+.manual-contato-conteudo {
+    width: min(680px, 100%);
+    margin: 0 auto;
+}
+
+.manual-contato .section-tag {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--dourado-escuro);
+}
+
+.manual-contato h2 {
+    margin: 0 0 20px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: clamp(36px, 4vw, 48px);
+    color: var(--verde-700);
+}
+
+.manual-contato p {
+    max-width: 580px;
+    margin: 8px auto;
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--texto-suave);
+}
+
+.manual-contato-botao {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 52px;
+    margin-top: 28px;
+    padding: 14px 28px;
+
+    border-radius: 8px;
+    background: var(--verde-700);
+    color: var(--branco);
+
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+.manual-contato-botao:hover {
+    transform: translateY(-2px);
+    background: var(--verde-800);
+}
+
+.manual-despedida {
+    margin-top: 48px;
+    padding-top: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    border-top: 1px solid rgba(48, 69, 45, 0.15);
+}
+
+.manual-despedida span {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 20px;
+    font-style: italic;
+    color: var(--texto-suave);
+}
+
+.manual-despedida strong {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 22px;
+    color: var(--verde-700);
+}
+
+@media (max-width: 560px) {
+
+    .manual-contato {
+        padding: 65px 22px;
+    }
+
+    .manual-contato-botao {
+        width: 100%;
+    }
+
+}
+/* =========================================================
+   MANUAL - LAYOUT DESKTOP HORIZONTAL
+   ========================================================= */
+
+@media (min-width: 901px) {
+
+    /* Área principal de cada seção */
+
+    .manual-bloco-conteudo {
+        width: min(1120px, 100%);
+        display: grid;
+        grid-template-columns:
+            minmax(0, 0.9fr)
+            minmax(420px, 1.1fr);
+
+        column-gap: clamp(60px, 7vw, 100px);
+        align-items: center;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       COLUNA ESQUERDA
+       ===================================================== */
+
+    .manual-bloco-conteudo > .manual-icone,
+    .manual-bloco-conteudo > .section-tag,
+    .manual-bloco-conteudo > h2,
+    .manual-bloco-conteudo > p:not(
+        .lenha-seguranca,
+        .agua-seguranca,
+        .agua-destaque,
+        .natureza-cuidado,
+        .refeicoes-observacao,
+        .saida-despedida
+    ) {
+        grid-column: 1;
+    }
+
+
+    .manual-bloco-conteudo > .manual-icone {
+        grid-row: 1;
+        margin-bottom: 12px;
+    }
+
+
+    .manual-bloco-conteudo > .section-tag {
+        grid-row: 2;
+        margin-bottom: 10px;
+    }
+
+
+    .manual-bloco-conteudo > h2 {
+        grid-row: 3;
+        margin-bottom: 18px;
+    }
+
+
+    .manual-bloco-conteudo > p:not(
+        .lenha-seguranca,
+        .agua-seguranca,
+        .agua-destaque,
+        .natureza-cuidado,
+        .refeicoes-observacao,
+        .saida-despedida
+    ) {
+        grid-row: 4;
+        max-width: 500px;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       COLUNA DIREITA
+       ===================================================== */
+
+    .wifi-dados,
+    .streaming-aviso,
+    .lenha-aviso,
+    .agua-aviso,
+    .natureza-aviso,
+    .refeicoes-aviso,
+    .saida-lista {
+
+        grid-column: 2;
+        grid-row: 1 / span 4;
+
+        width: 100%;
+        max-width: none;
+        margin: 0;
+
+        align-self: center;
+    }
+
+
+    /* Textos complementares abaixo dos cards */
+
+    .manual-lenha .lenha-seguranca,
+    .manual-agua .agua-seguranca,
+    .manual-natureza .natureza-cuidado,
+    .manual-refeicoes .refeicoes-observacao,
+    .manual-saida .saida-despedida {
+
+        grid-column: 2;
+        grid-row: 5;
+
+        max-width: none;
+        margin: 18px 0 0;
+
+        text-align: left;
+    }
+
+
+    .manual-agua .agua-destaque {
+        grid-column: 2;
+        grid-row: 6;
+
+        max-width: none;
+        margin: 12px 0 0;
+
+        text-align: left;
+    }
+
+
+    /* =====================================================
+       LOCALIZAÇÃO
+       Não possui section-tag
+       ===================================================== */
+
+    .manual-localizacao .manual-icone {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .manual-localizacao h2 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    .manual-localizacao p {
+        grid-column: 1;
+        grid-row: 3;
+
+        max-width: 500px;
+        margin: 0;
+    }
+
+    .manual-localizacao .btn-primary {
+        grid-column: 2;
+        grid-row: 1 / span 3;
+
+        width: 100%;
+        max-width: 430px;
+        min-height: 58px;
+
+        justify-self: center;
+        align-self: center;
+    }
+
+
+    /* =====================================================
+       SAÍDA
+       ===================================================== */
+
+    .manual-saida .saida-lista {
+        grid-row: 1 / span 4;
+    }
+
+
+    /* Um pouco mais de presença no desktop */
+
+    .manual-bloco {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+}
+/* =========================================================
+   MANUAL - REFINAMENTO MOBILE
+   ========================================================= */
+
+@media (max-width: 560px) {
+
+    /* Mantém a capa como está e compacta apenas o conteúdo */
+
+    .manual-bloco {
+        padding: 50px 18px;
+    }
+
+    .manual-icone {
+        margin-bottom: 10px;
+        font-size: 30px;
+    }
+
+    .manual-bloco .section-tag {
+        margin-bottom: 6px;
+        font-size: 11px;
+        letter-spacing: 1.6px;
+    }
+
+    .manual-bloco h2 {
+        margin-bottom: 12px;
+        font-size: 32px;
+        line-height: 1.08;
+    }
+
+    .manual-bloco p {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+
+    /* Cards informativos */
+
+    .wifi-dados,
+    .streaming-aviso,
+    .lenha-aviso,
+    .agua-aviso,
+    .natureza-aviso,
+    .refeicoes-aviso,
+    .saida-lista {
+        margin-top: 22px;
+        margin-bottom: 18px;
+    }
+
+    .streaming-aviso,
+    .lenha-aviso,
+    .agua-aviso,
+    .natureza-aviso,
+    .refeicoes-aviso {
+        padding: 20px;
+    }
+
+    .wifi-dado {
+        padding: 17px 20px;
+    }
+
+    .wifi-dado strong {
+        font-size: 16px;
+    }
+
+
+    /* Antes de ir embora */
+
+    .saida-item {
+        padding: 15px 18px;
+    }
+
+    .saida-item strong {
+        font-size: 15px;
+    }
+
+    .saida-item span {
+        font-size: 13px;
+    }
+
+
+    /* Textos complementares */
+
+    .manual-lenha .lenha-seguranca,
+    .manual-agua .agua-seguranca,
+    .manual-natureza .natureza-cuidado,
+    .manual-refeicoes .refeicoes-observacao {
+        font-size: 13px;
+        line-height: 1.55;
+    }
+
+    .manual-agua .agua-destaque,
+    .manual-saida .saida-despedida {
+        font-size: 14px;
+    }
+
+
+    /* Encerramento */
+
+    .manual-contato {
+        padding: 52px 18px;
+    }
+
+    .manual-contato h2 {
+        margin-bottom: 14px;
+        font-size: 34px;
+    }
+
+    .manual-contato p {
+        font-size: 15px;
+    }
+
+    .manual-contato-botao {
+        margin-top: 22px;
+    }
+
+    .manual-despedida {
+        margin-top: 36px;
+        padding-top: 22px;
     }
 
 }
