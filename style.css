@@ -2152,6 +2152,40 @@ body.lightbox-aberto {
     color: var(--verde-700);
 }
 
+.taxa-limpeza {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin: 0 0 22px;
+    padding: 17px 20px;
+    border: 1px solid rgba(231, 201, 133, 0.45);
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.taxa-limpeza-icone {
+    flex: 0 0 auto;
+    font-size: 24px;
+    line-height: 1;
+}
+
+.taxa-limpeza-texto {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.taxa-limpeza-texto strong {
+    color: var(--dourado);
+    font-size: 16px;
+}
+
+.taxa-limpeza-texto span {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
 .valores-observacao {
     margin: 0 0 22px;
     font-size: 14px;
@@ -2234,6 +2268,11 @@ body.lightbox-aberto {
 
     .valor-linha strong {
         font-size: 21px;
+    }
+
+    .taxa-limpeza {
+        align-items: flex-start;
+        padding: 16px;
     }
 
 }
